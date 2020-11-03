@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.todo-wrapper {
+  flex: 1;
+  height: 100vh;
+  width: 100vw;
+}
+
+.todo-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.todo-col {
+  border: 1px solid #333;
+  padding: 8px 16px;
+  width: 30%;
+}
+
+.todo-heading {
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #222;
+}
+
+.todo-item {
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-item .remove {
+  width: 24px;
+  cursor: pointer;
+  background-color: #f9f2f2;
+}
+
+.todo-item:hover {
+  border: 1px solid #999;
+  background-color: #ccc;
+}
+
+.todo-create {
+  margin: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.todo-create input,
+.todo-create button {
+  padding: 8px;
+  margin: 4px;
+}
